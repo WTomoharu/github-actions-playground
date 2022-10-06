@@ -1,0 +1,14 @@
+name: GitHub Actions Example
+
+on:
+  push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Some Step
+      run: "echo Hello World"
